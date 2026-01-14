@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FileText, ArrowLeft, Copy, CheckCircle2, Loader2 } from 'lucide-react';
+import API_URL from './config';
 
 export default function ManualTestingPage() {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ export default function ManualTestingPage() {
     setLoading(true);
     
     try {
-      const response = await fetch('http://localhost:8000/api/test/generate-prompts', {
+      const response = await fetch(`${API_URL}/api/test/generate-prompts`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -84,7 +85,7 @@ export default function ManualTestingPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://localhost:8000/api/test/manual', {
+      const response = await fetch(`${API_URL}/api/test/manual`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

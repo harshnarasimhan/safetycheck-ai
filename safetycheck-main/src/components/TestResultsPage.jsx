@@ -7,6 +7,7 @@ import {
   Loader2, Activity, Info
 } from 'lucide-react';
 import SafetyCheckLogo from './SafetyCheckLogo';
+import API_URL from './config';
 
 export default function TestResultsPage() {
   const { testRunId } = useParams();
@@ -83,7 +84,7 @@ export default function TestResultsPage() {
 
   const fetchResults = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/api/test/results/${testRunId}`);
+      const response = await fetch(`${API_URL}/api/test/results/${testRunId}`);
       
       if (!response.ok) {
         throw new Error('Failed to fetch results');
@@ -110,7 +111,7 @@ export default function TestResultsPage() {
     setDownloadingPdf(true);
     
     try {
-      const response = await fetch(`http://localhost:8000/api/test/results/${testRunId}/pdf`);
+      const response = await fetch(`${API_URL}/api/test/results/${testRunId}/pdf`);
       
       if (!response.ok) {
         throw new Error('Failed to generate PDF');
