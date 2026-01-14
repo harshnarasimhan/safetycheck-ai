@@ -1,0 +1,29 @@
+# Add to .gitignore
+.env
+*.env
+venv/
+__pycache__/
+*.pyc
+*.db".env" 
+".env" 
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Data & generated artifacts
+data/
+*.zip
+*.pdf
+reports/
+regulatory_docs/
+
+# Test outputs
+test_results.json
+test_*.json
+
+# Model / generated outputs
+embed_documents/
