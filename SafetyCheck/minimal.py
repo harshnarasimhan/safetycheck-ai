@@ -48,10 +48,15 @@ app = FastAPI()
 # Initialize database
 db = TestDatabase()
 
-# CORS middleware
+# CORS middleware - FIXED for production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:3000",              # Local React dev
+        "http://localhost:5173",              # Local Vite dev
+        "https://safetycheck-1.onrender.com/", # YOUR PRODUCTION FRONTEND
+        "https://*.onrender.com",             # All Render subdomains
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
