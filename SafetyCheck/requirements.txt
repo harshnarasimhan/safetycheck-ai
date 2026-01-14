@@ -1,0 +1,260 @@
+# SafetyCheck AI - Python Backend Dependencies
+# Healthcare & Finance AI Safety Testing Platform
+# Last Updated: January 2025
+
+# ============================================================================
+# CORE WEB FRAMEWORK
+# ============================================================================
+fastapi==0.121.0
+uvicorn==0.38.0
+uvicorn[standard]==0.38.0
+starlette==0.49.3
+pydantic==2.12.4
+pydantic_core==2.41.5
+python-multipart==0.0.20
+
+# ============================================================================
+# AI & LLM PROVIDERS
+# ============================================================================
+# Groq - Primary provider (free, unlimited, fast)
+groq==0.37.0
+
+# OpenAI - Optional fallback provider
+openai==2.7.1
+
+# Anthropic Claude - Optional provider
+anthropic==0.75.0
+
+# ============================================================================
+# LANGCHAIN FRAMEWORK (for advanced workflows)
+# ============================================================================
+langchain==1.1.2
+langchain-core==1.1.1
+langchain-openai==1.1.0
+langchain-text-splitters==1.0.0
+langgraph==1.0.4
+langgraph-checkpoint==3.0.1
+langgraph-prebuilt==1.0.5
+langgraph-sdk==0.2.14
+langsmith==0.4.56
+
+# ============================================================================
+# VECTOR DATABASE & EMBEDDINGS
+# ============================================================================
+# Pinecone - Vector database for RAG system
+pinecone==8.0.0
+pinecone-plugin-assistant==3.0.1
+pinecone-plugin-interface==0.0.7
+
+# Sentence Transformers - For creating embeddings
+sentence-transformers==5.1.2
+
+# PyTorch - Required for embeddings
+torch==2.9.0
+transformers==4.57.1
+tokenizers==0.22.1
+safetensors==0.6.2
+huggingface-hub==0.36.0
+
+# ============================================================================
+# NLP & TEXT PROCESSING
+# ============================================================================
+# spaCy - Advanced NLP
+spacy==3.8.8
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85
+
+# spaCy dependencies
+thinc==8.3.8
+cymem==2.0.11
+preshed==3.0.10
+murmurhash==1.0.13
+wasabi==1.1.3
+catalogue==2.0.10
+confection==0.1.5
+srsly==2.5.1
+typer-slim==0.20.0
+weasel==0.4.2
+blis==1.3.0
+
+# Additional NLP tools
+sentencepiece==0.2.1
+detoxify==0.5.2
+
+# ============================================================================
+# PDF GENERATION & MANIPULATION
+# ============================================================================
+# ReportLab - Create PDF reports
+reportlab==4.4.6
+
+# PyPDF - Read and manipulate PDFs
+pypdf==6.4.1
+
+# ============================================================================
+# DATA PROCESSING & ANALYSIS
+# ============================================================================
+pandas==2.3.3
+numpy==2.3.4
+scikit-learn==1.7.2
+scipy==1.16.3
+joblib==1.5.2
+threadpoolctl==3.6.0
+
+# ============================================================================
+# HTTP & API UTILITIES
+# ============================================================================
+requests==2.32.5
+requests-toolbelt==1.0.0
+httpx==0.28.1
+httpcore==1.0.9
+httptools==0.7.1
+aiohttp==3.9.1
+h11==0.16.0
+anyio==4.11.0
+sniffio==1.3.1
+
+# ============================================================================
+# ENVIRONMENT & CONFIGURATION
+# ============================================================================
+python-dotenv==1.2.1
+
+# ============================================================================
+# TOKEN COUNTING & TEXT UTILITIES
+# ============================================================================
+tiktoken==0.12.0
+regex==2025.11.3
+
+# ============================================================================
+# DATE & TIME UTILITIES
+# ============================================================================
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tzdata==2025.2
+
+# ============================================================================
+# JSON & DATA SERIALIZATION
+# ============================================================================
+orjson==3.11.5
+ormsgpack==1.12.0
+
+# ============================================================================
+# SECURITY & AUTHENTICATION
+# ============================================================================
+python-jose==3.5.0
+passlib==1.7.4
+bcrypt==4.0.1
+cryptography==46.0.3
+pycparser==2.23
+cffi==2.0.0
+pyasn1==0.6.1
+rsa==4.9.1
+ecdsa==0.19.1
+
+# ============================================================================
+# DATABASE & STORAGE
+# ============================================================================
+SQLAlchemy==2.0.44
+greenlet==3.2.4
+
+# ============================================================================
+# FILE & CLOUD UTILITIES
+# ============================================================================
+filelock==3.20.0
+fsspec==2025.10.0
+cloudpathlib==0.23.0
+smart_open==7.4.4
+
+# ============================================================================
+# COMPRESSION & HASHING
+# ============================================================================
+lz4==4.4.5
+xxhash==3.6.0
+zstandard==0.25.0
+
+# ============================================================================
+# TEMPLATING & MARKUP
+# ============================================================================
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+
+# ============================================================================
+# NETWORKING & PROTOCOLS
+# ============================================================================
+websockets==15.0.1
+grpcio==1.67.1
+googleapis-common-protos==1.72.0
+protobuf==5.29.5
+protoc-gen-openapiv2==0.0.1
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+click==8.3.0
+tqdm==4.67.1
+PyYAML==6.0.3
+packaging==24.2
+tenacity==9.1.2
+jsonpatch==1.33
+jsonpointer==3.0.0
+typing_extensions==4.15.0
+typing-inspection==0.4.2
+annotated-types==0.7.0
+annotated-doc==0.0.3
+docstring_parser==0.17.0
+uuid_utils==0.12.0
+wrapt==2.0.1
+distro==1.9.0
+networkx==3.5
+sympy==1.14.0
+mpmath==1.3.0
+pillow==12.0.0
+
+# ============================================================================
+# SSL & CERTIFICATES
+# ============================================================================
+certifi==2025.10.5
+urllib3==2.5.0
+charset-normalizer==3.4.4
+idna==3.11
+
+# ============================================================================
+# DEVELOPMENT TOOLS
+# ============================================================================
+watchfiles==1.1.1
+colorama==0.4.6
+six==1.17.0
+jiter==0.11.1
+setuptools==80.9.0
+
+# ============================================================================
+# NOTES
+# ============================================================================
+# Installation Instructions:
+# 1. Create virtual environment: python -m venv venv
+# 2. Activate: source venv/bin/activate (Linux/Mac) or venv\Scripts\activate (Windows)
+# 3. Install: pip install -r requirements.txt
+#
+# Key Dependencies:
+# - GROQ_API_KEY: Primary LLM provider (free, unlimited)
+# - PINECONE_API_KEY: Vector database for RAG (free tier available)
+# - OpenAI/Anthropic: Optional fallback providers
+#
+# Get API Keys:
+# - Groq: https://console.groq.com
+# - Pinecone: https://app.pinecone.io
+# - OpenAI: https://platform.openai.com
+# - Anthropic: https://console.anthropic.com
+#
+# Notes:
+# - This requirements.txt includes ALL dependencies from your current environment
+# - Pinecone (not ChromaDB) is used for vector storage
+# - LangChain is included for advanced agent workflows
+# - spaCy model (en_core_web_sm) is included for NLP tasks
+# - All versions match your working environment
+#
+# Update all packages:
+# pip install --upgrade -r requirements.txt
+#
+# Create lockfile:
+# pip freeze > requirements-lock.txt
