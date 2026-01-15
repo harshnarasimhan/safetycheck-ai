@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FileText, ArrowLeft, Copy, CheckCircle2, Loader2 } from 'lucide-react';
-import API_URL from './config';
+import API_URL from '../config';
 
 export default function ManualTestingPage() {
   const navigate = useNavigate();

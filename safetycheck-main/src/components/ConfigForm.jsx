@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Settings, Zap, Shield, Database, Cpu, Key, Thermometer, FileText, CheckCircle2, XCircle, Loader2 } from 'lucide-react';
 import SafetyCheckLogo from './SafetyCheckLogo';
-import API_URL from './config';
+import API_URL from '../config';
 
 export default function ConfigForm({ onSubmit }) {
   const navigate = useNavigate();

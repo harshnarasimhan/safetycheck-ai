@@ -7,7 +7,7 @@ import {
   Loader2, Activity, Info
 } from 'lucide-react';
 import SafetyCheckLogo from './SafetyCheckLogo';
-import API_URL from './config';
+import API_URL from '../config';
 
 export default function TestResultsPage() {
   const { testRunId } = useParams();
