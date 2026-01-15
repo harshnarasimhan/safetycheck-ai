@@ -6,6 +6,9 @@ import { ArrowLeft, Rocket, Loader2, Zap, Brain, Scale } from 'lucide-react';
 import ConfigForm from './ConfigForm';
 import Disclaimer from './Disclaimer';
 
+// HARDCODED BACKEND URL FOR RENDER
+const BACKEND_URL = 'https://safetycheck-api-7xai.onrender.com';
+
 export default function TestConfigPage() {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,8 +28,9 @@ export default function TestConfigPage() {
 
       // Regular API testing flow
       console.log('🚀 Submitting test configuration:', formData);
+      console.log('🔗 Backend URL:', BACKEND_URL);
       
-      const response = await fetch('http://localhost:8000/api/test/start', {
+      const response = await fetch(`${BACKEND_URL}/api/test/start`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -56,7 +60,7 @@ export default function TestConfigPage() {
     } catch (error) {
       console.error('❌ Test submission error:', error);
       setError(error.message);
-      alert(`❌ Error: ${error.message}`);
+      alert(`❌ Error: ${error.message}\n\nBackend: ${BACKEND_URL}\n\nMake sure backend is awake!`);
     } finally {
       setIsSubmitting(false);
     }
