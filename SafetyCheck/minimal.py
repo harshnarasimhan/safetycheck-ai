@@ -54,7 +54,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://localhost:5173",
-        "https://safetycheck-1.onrender.com/",
+        "https://safetycheck-1.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
