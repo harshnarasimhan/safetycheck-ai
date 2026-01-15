@@ -1,6 +1,7 @@
 {
   "name": "safetycheck-frontend",
   "version": "1.0.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "framer-motion": "^12.23.26",
